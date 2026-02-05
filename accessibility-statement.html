@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility Statement - Our commitment to making our website accessible to everyone in compliance with WCAG 2.1 AA and EAA standards.">
+    <meta name="robots" content="index, follow">
+    <title>Accessibility Statement | Your Company</title>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Accessibility Statement",
+      "description": "Our commitment to web accessibility and WCAG 2.1 AA compliance",
+      "url": "https://yourwebsite.com/accessibility-statement.html"
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-navy: #0f1419;
+            --accent-gold: #c9a56a;
+            --text-white: #ffffff;
+            --text-light: #e8eef5;
+            --text-gray: #94a3b8;
+            --bg-dark: #050810;
+            --bg-card: #1a2332;
+            --border-subtle: #2d3748;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-white);
+            line-height: 1.7;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-gold);
+            color: var(--primary-navy);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            background: rgba(15, 20, 25, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #c9a56a 0%, #e4bc7c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #c9a56a 0%, #e4bc7c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .last-updated {
+            color: var(--text-gray);
+            margin-bottom: 3rem;
+            font-size: 0.95rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        p, li {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .notice-box {
+            background: rgba(201, 165, 106, 0.1);
+            border-left: 4px solid var(--accent-gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .success-icon {
+            color: #10b981;
+        }
+        
+        .warning-icon {
+            color: #f59e0b;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            main {
+                padding: 2rem 1.5rem 4rem;
+            }
+        }
+        
+        *:focus-visible {
+            outline: 3px solid var(--accent-gold);
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">Sterling Executive Group</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="cookie-policy.html">Cookies</a></li>
+                <li><a href="accessibility-statement.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <article>
+            <h1>Accessibility Statement</h1>
+            <p class="last-updated">Last Updated: February 5, 2026</p>
+
+            <h2>Our Commitment to Accessibility</h2>
+            <p>Sterling Executive Group is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
+
+            <h2>Conformance Status</h2>
+            <p>The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">Web Content Accessibility Guidelines (WCAG)</a> define requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.</p>
+
+            <p>Our website is designed to conform to <strong>WCAG 2.1 Level AA</strong> standards. This means we meet the internationally recognized standards for web accessibility and comply with:</p>
+            <ul>
+                <li><strong>WCAG 2.1 Level AA</strong> - Web Content Accessibility Guidelines</li>
+                <li><strong>European Accessibility Act (EAA)</strong> - EU accessibility requirements</li>
+                <li><strong>EN 301 549</strong> - European standard for digital accessibility</li>
+                <li><strong>Section 508</strong> - U.S. federal accessibility standards</li>
+            </ul>
+
+            <h2>Measures to Support Accessibility</h2>
+            <p>We have taken the following measures to ensure accessibility:</p>
+
+            <h3>Organizational Commitment</h3>
+            <ul>
+                <li>Include accessibility as part of our mission statement</li>
+                <li>Provide continual accessibility training for our staff</li>
+                <li>Assign clear accessibility goals and responsibilities</li>
+                <li>Employ formal accessibility quality assurance methods</li>
+            </ul>
+
+            <h3>Technical Implementation</h3>
+            <ul>
+                <li class="success-icon">✓ Semantic HTML5 structure with proper heading hierarchy</li>
+                <li class="success-icon">✓ ARIA landmarks for screen reader navigation</li>
+                <li class="success-icon">✓ Skip navigation link to bypass repetitive content</li>
+                <li class="success-icon">✓ Keyboard-accessible navigation and interactive elements</li>
+                <li class="success-icon">✓ Visible focus indicators for keyboard users</li>
+                <li class="success-icon">✓ Color contrast ratio of 4.5:1 or higher for text</li>
+                <li class="success-icon">✓ Responsive design that works on all device sizes</li>
+                <li class="success-icon">✓ Text can be resized up to 200% without loss of content</li>
+                <li class="success-icon">✓ Reduced motion support for users with vestibular disorders</li>
+                <li class="success-icon">✓ Alternative text for images and meaningful content</li>
+                <li class="success-icon">✓ Form labels and error messages properly associated</li>
+                <li class="success-icon">✓ Logical tab order throughout the website</li>
+            </ul>
+
+            <h2>Accessibility Features</h2>
+
+            <h3>Keyboard Navigation</h3>
+            <p>Our website can be navigated entirely using a keyboard:</p>
+            <ul>
+                <li><strong>Tab:</strong> Move forward through links and form controls</li>
+                <li><strong>Shift + Tab:</strong> Move backward through links and form controls</li>
+                <li><strong>Enter:</strong> Activate links and buttons</li>
+                <li><strong>Space:</strong> Scroll down the page or activate buttons</li>
+                <li><strong>Arrow Keys:</strong> Navigate within dropdown menus</li>
+                <li><strong>Escape:</strong> Close modals and dropdown menus</li>
+            </ul>
+
+            <h3>Screen Reader Support</h3>
+            <p>Our website is compatible with popular screen readers including:</p>
+            <ul>
+                <li>JAWS (Windows)</li>
+                <li>NVDA (Windows)</li>
+                <li>VoiceOver (macOS, iOS)</li>
+                <li>TalkBack (Android)</li>
+                <li>Narrator (Windows)</li>
+            </ul>
+
+            <h3>Visual Accessibility</h3>
+            <ul>
+                <li>High contrast color schemes</li>
+                <li>Resizable text without loss of functionality</li>
+                <li>No content relies solely on color to convey information</li>
+                <li>Text and interactive elements are clearly distinguishable</li>
+            </ul>
+
+            <h3>Cognitive Accessibility</h3>
+            <ul>
+                <li>Clear and consistent navigation structure</li>
+                <li>Descriptive page titles and headings</li>
+                <li>Simple language where possible</li>
+                <li>Predictable and consistent layout</li>
+            </ul>
+
+            <h2>Assessment and Testing</h2>
+            <p>We regularly test our website for accessibility using:</p>
+
+            <h3>Automated Testing Tools</h3>
+            <ul>
+                <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE Web Accessibility Evaluation Tool</a></li>
+                <li><a href="https://www.deque.com/axe/" target="_blank" rel="noopener">axe DevTools</a> browser extension</li>
+                <li>Google Lighthouse accessibility audits</li>
+                <li><a href="https://www.accessibilitychecker.org/" target="_blank" rel="noopener">Accessibility Checker</a></li>
+            </ul>
+
+            <h3>Manual Testing</h3>
+            <ul>
+                <li>Keyboard-only navigation testing</li>
+                <li>Screen reader testing with multiple tools</li>
+                <li>Color contrast analysis</li>
+                <li>Mobile device accessibility testing</li>
+                <li>User testing with people with disabilities</li>
+            </ul>
+
+            <h2>Known Limitations</h2>
+            <p>Despite our best efforts to ensure accessibility, there may be some limitations. Below are known issues we are working to resolve:</p>
+
+            <ul>
+                <li class="warning-icon">⚠ Some older PDF documents may not be fully accessible (we are working to update these)</li>
+                <li class="warning-icon">⚠ Third-party embedded content (e.g., social media feeds) may not meet our accessibility standards</li>
+                <li class="warning-icon">⚠ Some legacy multimedia content may lack captions or transcripts (being updated)</li>
+            </ul>
+
+            <p>We are actively working to address these limitations and will provide updates as improvements are made.</p>
+
+            <h2>Assistive Technologies</h2>
+            <p>Our website is designed to be compatible with the following assistive technologies:</p>
+            <ul>
+                <li>Screen readers</li>
+                <li>Screen magnification software</li>
+                <li>Speech recognition software</li>
+                <li>Alternative input devices</li>
+                <li>Browser text-to-speech tools</li>
+            </ul>
+
+            <h2>Browser and Device Compatibility</h2>
+            <p>Our website is designed to work with the following browsers and assistive technologies:</p>
+            <ul>
+                <li>Recent versions of Chrome, Firefox, Safari, and Edge</li>
+                <li>iOS devices with VoiceOver</li>
+                <li>Android devices with TalkBack</li>
+                <li>Windows devices with JAWS, NVDA, or Narrator</li>
+                <li>macOS devices with VoiceOver</li>
+            </ul>
+
+            <h2>Third-Party Content</h2>
+            <p>We strive to ensure that third-party content integrated into our website (such as social media embeds, videos, or external widgets) meets accessibility standards. However, we cannot guarantee the accessibility of content from external sources.</p>
+
+            <p>If you encounter accessibility barriers with third-party content, please let us know so we can work with the provider to resolve the issue or provide an alternative.</p>
+
+            <h2>Feedback and Contact Information</h2>
+            <p>We welcome your feedback on the accessibility of our website. Please let us know if you encounter accessibility barriers:</p>
+
+            <div class="notice-box">
+                <p><strong>Accessibility Coordinator</strong><br>
+                Your Company<br>
+                Email: <a href="mailto:accessibility@yourwebsite.com">accessibility@yourwebsite.com</a><br>
+                Phone: [Your Phone Number]<br>
+                Address: [Your Business Address]</p>
+            </div>
+
+            <p>We try to respond to accessibility feedback within <strong>5 business days</strong>.</p>
+
+            <h2>Formal Complaints</h2>
+            <p>If you are not satisfied with our response to your accessibility concern, you may file a formal complaint with:</p>
+
+            <h3>Australia</h3>
+            <p><strong>Australian Human Rights Commission</strong><br>
+            Website: <a href="https://humanrights.gov.au/" target="_blank" rel="noopener">humanrights.gov.au</a><br>
+            Phone: 1300 656 419<br>
+            Email: infoservice@humanrights.gov.au</p>
+
+            <h3>European Union</h3>
+            <p>Contact your national enforcement body for the European Accessibility Act. A list can be found on the <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12537-European-accessibility-act-evaluation" target="_blank" rel="noopener">European Commission website</a>.</p>
+
+            <h3>United States</h3>
+            <p><strong>U.S. Department of Justice</strong><br>
+            Website: <a href="https://www.ada.gov/" target="_blank" rel="noopener">ada.gov</a><br>
+            Civil Rights Division - Disability Rights Section</p>
+
+            <h2>Continuous Improvement</h2>
+            <p>Accessibility is an ongoing effort. We are committed to continuously improving our website's accessibility by:</p>
+            <ul>
+                <li>Regularly auditing our website for compliance</li>
+                <li>Training our team on accessibility best practices</li>
+                <li>Incorporating user feedback into our development process</li>
+                <li>Staying current with evolving accessibility standards</li>
+                <li>Partnering with accessibility experts and consultants</li>
+            </ul>
+
+            <h2>Accessibility Resources</h2>
+            <p>For more information about web accessibility, visit:</p>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C Web Accessibility Initiative (WAI)</a></li>
+                <li><a href="https://www.a11yproject.com/" target="_blank" rel="noopener">The A11Y Project</a></li>
+                <li><a href="https://webaim.org/" target="_blank" rel="noopener">WebAIM (Web Accessibility In Mind)</a></li>
+                <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener">WCAG 2.1 Quick Reference</a></li>
+            </ul>
+
+            <h2>Date of Statement</h2>
+            <p>This accessibility statement was created on <strong>February 5, 2026</strong> and last reviewed on <strong>February 5, 2026</strong>.</p>
+
+            <p>This statement will be reviewed and updated at least annually or when significant changes are made to our website.</p>
+
+            <hr style="border: none; border-top: 1px solid var(--border-subtle); margin: 3rem 0;">
+            
+            <p style="text-align: center; color: var(--text-gray); font-size: 0.9rem;">
+                <a href="index.html">Return to Home</a> | 
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="cookie-policy.html">Cookie Policy</a> | 
+                <a href="terms-of-service.html">Terms of Service</a>
+            </p>
+        </article>
+    </main>
+</body>
+</html>

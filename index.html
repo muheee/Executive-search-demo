@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boutique executive search firm partnering with Boards and C‑Suite leaders across Australia's critical industries.">
+    <meta name="keywords" content="executive search, board search, c-suite, leadership assessment, market mapping, Australia">
+    <meta name="author" content="Talent Search Haus">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Talent Search Haus | Executive Search in Australia">
+    <meta property="og:description" content="Partner-led executive search for Boards, C‑Suite and critical leadership roles across Australia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://talentsearchhaus.com">
+    <meta property="og:image" content="https://talentsearchhaus.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Talent Search Haus | Executive Search in Australia">
+    <meta name="twitter:description" content="Partner-led executive search for Boards, C‑Suite and critical leadership roles."
+    
+    <!-- Schema.org JSON-LD for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sterling Executive Group",
+      "url": "https://sterlingexecutive.com",
+      "description": "Premier executive search consultancy specialising in Board, C‑Suite and senior leadership roles across Financial Services, Energy and Critical Industries in Australia.",
+      "foundingDate": "2018",
+      "areaServed": "Australia",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@sterlingexecutive.com",
+        "contactType": "customer service"
+      },
+      "sameAs": ["https://www.linkedin.com/company/sterling-executive-group"]
+    }
+    </script>
+    
+    <title>Sterling Executive Group | Executive Search in Australia</title>
+    
+    <style>
+        :root {
+            --primary-navy: #0f1419;
+            --secondary-blue: #1e3a5f;
+            --accent-gold: #c9a56a;
+            --accent-gold-bright: #e4bc7c;
+            --text-white: #ffffff;
+            --text-light: #e8eef5;
+            --text-gray: #94a3b8;
+            --bg-dark: #050810;
+            --bg-card: #1a2332;
+            --border-subtle: #2d3748;
+            --gradient-1: linear-gradient(135deg, #c9a56a 0%, #e4bc7c 100%);
+            --gradient-2: linear-gradient(135deg, #1e3a5f 0%, #2d5a8f 100%);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-white);
+            line-height: 1.7;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            background: radial-gradient(ellipse at top, rgba(30, 58, 95, 0.15), transparent 50%),
+                        radial-gradient(ellipse at bottom right, rgba(201, 165, 106, 0.08), transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent-gold);
+            color: var(--primary-navy);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            background: rgba(15, 20, 25, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a:focus {
+            color: var(--accent-gold);
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 8rem 3rem 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(201, 165, 106, 0.15), transparent 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            position: relative;
+        }
+        
+        .hero h1 .highlight {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            color: var(--text-light);
+            max-width: 850px;
+            margin: 0 auto 3rem;
+            line-height: 1.9;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-1);
+            color: var(--primary-navy);
+            padding: 1.1rem 3rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            box-shadow: 0 4px 16px rgba(201, 165, 106, 0.3);
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #e4bc7c 0%, #c9a56a 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn-primary:hover::before,
+        .btn-primary:focus::before {
+            opacity: 1;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus {
+            outline: none;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(201, 165, 106, 0.4);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-white);
+            padding: 1.1rem 3rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            border-color: var(--accent-gold);
+            background: rgba(201, 165, 106, 0.1);
+            color: var(--accent-gold);
+            outline: none;
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 3rem 6rem;
+        }
+        
+        section {
+            margin-bottom: 6rem;
+        }
+        
+        section h2 {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+        
+        section h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .about-text {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+        
+        .team-card {
+            background: linear-gradient(135deg, rgba(26, 35, 50, 0.8), rgba(30, 58, 95, 0.3));
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .team-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(201, 165, 106, 0.5);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .team-card h3 {
+            color: var(--accent-gold);
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        .team-card .role {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .team-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, rgba(26, 35, 50, 0.6), rgba(30, 58, 95, 0.2));
+            border-left: 4px solid var(--accent-gold);
+            padding: 2.5rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-left: 4px solid var(--accent-gold);
+        }
+        
+        .service-card:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-md);
+            border-left-color: var(--accent-gold-bright);
+        }
+        
+        .service-card h4 {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(180deg, transparent, rgba(15, 20, 25, 0.9));
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 5rem 3rem 2rem;
+            margin-top: 8rem;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-about h3 {
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+        
+        .footer-about p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+        
+        .footer-links h4 {
+            color: var(--text-white);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover,
+        .footer-links a:focus {
+            color: var(--accent-gold);
+        }
+        
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Accessibility Features */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .hero {
+                padding: 4rem 1.5rem 3rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            section h2 {
+                font-size: 2.2rem;
+            }
+            
+            nav, main, .hero, footer {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+        
+        /* Focus visible for keyboard navigation */
+        *:focus-visible {
+            outline: 3px solid var(--accent-gold);
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">Sterling Executive Group</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>We are <span class="highlight">Sterling Executive Group</span></h1>
+        <p class="hero-subtitle">Premier executive search for Boards, C‑Suite and senior leaders across Australia's most demanding sectors</p>
+        
+        <div class="hero-cta">
+            <a href="#contact" class="btn-primary">Schedule a Call</a>
+            <a href="#about" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <main id="main-content" role="main">
+        <!-- About Section -->
+        <section id="about">
+            <h2>Why Work with Us</h2>
+            
+            <div class="about-content">
+                <div>
+                    <h3>Our Distinctive Approach</h3>
+                    <p class="about-text">We maintain exclusive partnerships with premier professional networks across Asia Pacific, providing access to exceptional leadership talent across multiple geographies and industries.</p>
+                    <p class="about-text">From executive advisory to search delivery, we partner with C‑suite teams and Boards to identify and secure transformational leadership talent.</p>
+                    <p class="about-text">Our partner‑driven engagement model ensures senior oversight throughout every search. Partners maintain direct involvement in candidate interactions, and our reputation is built on consistent delivery over many years.</p>
+                    
+                    <h3>Track Record</h3>
+                    <p class="about-text">25+ years. 1,200+ completed mandates. A systematic, research‑intensive methodology delivered with professionalism and discretion. We limit concurrent client engagements to ensure focus and avoid competitive conflicts, serving enterprises, high‑growth ventures and investor‑backed businesses. Sector expertise across financial services, energy &amp; infrastructure, technology and advanced industries; functional coverage spanning Board, C‑Suite and senior leadership roles.</p>
+                </div>
+                
+                <div>
+                    <h3>Building Lasting Relationships</h3>
+                    <p class="about-text">We craft compelling opportunity narratives that resonate with outstanding leaders seeking their next challenge. Our approach emphasizes thorough understanding, meticulous research and respectful engagement, underpinned by unwavering commitment to excellence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2>Meet Our Leadership Team</h2>
+            
+            <div class="team-grid">
+                <article class="team-card">
+                    <h3>Rebecca Harrison</h3>
+                    <p class="role">Founder &amp; Managing Partner</p>
+                    <p>Rebecca brings 25+ years of executive search expertise and has successfully completed over 1,200 senior leadership placements. She partners with Boards and C‑suite executives on mission‑critical talent decisions across financial services, technology and regulated industries.</p>
+                    <p>Outside the office, Rebecca is an avid trail runner who tackles challenging mountain routes on weekends. She divides her time between Brisbane and Sydney, enjoys experimenting with specialty coffee brewing methods, and is currently exploring the intersection of neuroscience and leadership development.</p>
+                </article>
+                
+                <article class="team-card">
+                    <h3>Marcus Chen</h3>
+                    <p class="role">Partner</p>
+                    <p>Marcus specializes in complex, confidential search assignments where precision and sound judgement are paramount. His measured, thorough approach and ability to establish trust with senior stakeholders sets him apart.</p>
+                    <p>When not working, Marcus starts each morning cycling along the Brisbane River before sunrise. He's passionate about architectural design, maintains an impressive vinyl record collection, and values time spent with his close circle of friends. This balance of focus, curiosity and genuine connection shapes his professional practice.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise">
+            <h2>Our Expertise</h2>
+            <p class="about-text" style="margin-bottom: 2rem;">25+ years of proven sector and functional expertise. Our consultants are trusted by Boards, C‑Suite and senior executives across publicly listed corporations, multinational enterprises, government agencies, technology scale‑ups and private equity portfolio companies.</p>
+            
+            <div class="services-grid">
+                <article class="service-card">
+                    <h4>Executive Search</h4>
+                    <p>Partner‑directed searches for Board, C‑Suite and senior leadership positions, executed with comprehensive sourcing, structured assessment and rigorous validation.</p>
+                </article>
+                
+                <article class="service-card">
+                    <h4>Leadership Assessment</h4>
+                    <p>Independent evaluation and due diligence leveraging our proprietary assessment methodology to verify competency, cultural alignment and readiness for critical appointments.</p>
+                </article>
+                
+                <article class="service-card">
+                    <h4>Market Intelligence &amp; Mapping</h4>
+                    <p>Comprehensive talent landscape analysis, pipeline development and confidential introductions to exceptional leaders within target sectors.</p>
+                </article>
+                
+                <article class="service-card">
+                    <h4>Executive Advisory</h4>
+                    <p>Guiding senior leaders through career transitions, onboarding acceleration and sustained performance optimization.</p>
+                </article>
+            </div>
+
+            <h3 style="margin-top: 3rem; color: var(--accent-gold);">Critical Functions We Serve</h3>
+            <p class="about-text" style="margin-bottom: 1.5rem;">Mission‑critical appointments across Risk Management, Legal &amp; Regulatory Compliance, Artificial Intelligence &amp; Analytics, Investor Relations, Technology Infrastructure, Operations and Strategic Program Delivery.</p>
+
+            <h3 style="margin-top: 3rem; color: var(--accent-gold);">Industry Expertise</h3>
+            <div class="services-grid" style="margin-top: 1.5rem;">
+                <article class="service-card">
+                    <h4>Financial Services</h4>
+                    <p>Board, C‑Suite and senior leadership across banking, wealth management, insurance, institutional investing and financial technology.</p>
+                </article>
+                
+                <article class="service-card">
+                    <h4>Energy &amp; Resources</h4>
+                    <p>Executive appointments supporting transition strategies, renewable development, sustainability initiatives and resource optimization.</p>
+                </article>
+
+                <article class="service-card">
+                    <h4>Government &amp; Regulated Sectors</h4>
+                    <p>Senior and specialist placements across public sector entities where integrity, security clearance and considered judgement are mandatory.</p>
+                </article>
+                
+                <article class="service-card">
+                    <h4>Advanced Manufacturing &amp; Engineering</h4>
+                    <p>Leadership and technical specialist roles where engineering excellence, quality assurance and operational discipline are fundamental.</p>
+                </article>
+
+                <article class="service-card">
+                    <h4>Infrastructure &amp; Utilities</h4>
+                    <p>Executive placements across transportation, energy distribution, telecommunications and essential services where regulatory compliance and operational resilience are critical.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <h2>Insights &amp; Updates</h2>
+            <p class="about-text" style="margin-bottom: 2rem;">Stay informed with our latest thought leadership, market insights and appointment announcements through multiple channels.</p>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h4>LinkedIn Insights</h4>
+                    <p>Follow our market commentary, leadership trends and industry analysis on <a href="https://www.linkedin.com/company/sterling-executive-group" style="color: var(--accent-gold);">LinkedIn</a>.</p>
+                </article>
+                <article class="service-card">
+                    <h4>Publications &amp; Media</h4>
+                    <p>Original research, expert interviews and multimedia content published directly alongside our social media updates.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p class="about-text">To discuss a senior leadership requirement or explore how we can support your organization, we invite you to connect.</p>
+            <p class="about-text" style="margin-top: 2rem;">
+                <strong>Email:</strong> <a href="mailto:contact@sterlingexecutive.com" style="color: var(--accent-gold); text-decoration: none;">contact@sterlingexecutive.com</a><br>
+                <strong>Website:</strong> <a href="https://sterlingexecutive.com" style="color: var(--accent-gold); text-decoration: none;">www.sterlingexecutive.com</a><br>
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/sterling-executive-group" style="color: var(--accent-gold); text-decoration: none;">linkedin.com/company/sterling-executive-group</a>
+            </p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Sterling Executive Group</h3>
+                <p>Premier executive search consultancy delivering partner‑driven, high‑impact leadership solutions across Australia's most demanding sectors.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Founded 2018 | Australia</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Expertise</h4>
+                <ul>
+                    <li><a href="#expertise">Executive Search</a></li>
+                    <li><a href="#expertise">Leadership Assessment</a></li>
+                    <li><a href="#expertise">Market Mapping</a></li>
+                    <li><a href="#expertise">Industries</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    <li><a href="accessibility-statement.html">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sterling Executive Group. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
